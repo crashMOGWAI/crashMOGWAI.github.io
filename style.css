@@ -18,7 +18,8 @@ body{
     padding-left: 20px;
     margin: 0 auto;
 }
-@media screen and (max-width:750px){
+@media screen 
+    and (max-width:750px){
     #container{
         display: grid;
         grid-template-columns: repeat(4, 1fr, [start-line]);
@@ -31,6 +32,23 @@ body{
         margin: 0 auto;
     }
 }
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 667px) 
+    and (orientation : portrait){
+    #container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr, [start-line]);
+        grid-template-areas:
+            "header header header header"
+            "main main main main"
+            "side side side side"
+            "footer footer footer footer";
+        grid-gap: 2px;
+        margin: 0 auto;
+    }
+}
+
 #container >*{
     background: #3bbced;
     padding: 20px;
