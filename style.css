@@ -5,15 +5,19 @@ body{
 }
 #content header{
     background: #777;
+    grid-area: header;
 }
 #content main{
     background: #3bbced;
+    grid-area: main;
 }
 #content side{
     background: #2e2e2e;
+    grid-area: side;
 }
 #content footer{
     background: #777;
+    grid-area: footer;
 }
 #content{
     display: grid;
@@ -26,4 +30,3 @@ body{
     max-width: 960px;
     margin: 0 auto;
 }
-
